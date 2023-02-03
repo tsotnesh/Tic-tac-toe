@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-tac-toe App</title>
+
+    <script src="https://kit.fontawesome.com/169bb788be.js" crossorigin="anonymous"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="main-card" id="maincard">
+        <img class = "main-card-logo" src = "assets/logo.svg" alt="logo">
+        <div class = "main-card-block">
+            <h2 class="header-1">PICK PLAYER 1’S MARK</h2>
+            <div class="mainc-card-block-block">
+                <div class="x-block" id="xBlock"> <i class="fa-solid fa-xmark"></i></div>
+                <div class="o-block hidden" id="oBlock"> <i class="fa-solid fa-o"> </i></div>
+            </div>
+            <h2 class="header-2">REMEMBER : X GOES FIRST</h2>
+        </div>
+        <button id="button1" class="new-game-cpu-button" type="submit">NEW GAME (VS CPU)</button>
+        <button id="button2"class="new-game-plr-button" type="submit">NEW GAME  (VS PLAYER)</button>
+
+        
+        </div>
+
+        <div class = "active-block dissapear" id="activeblock">
+        
+            <div class="first-line"> 
+             <div class="logo-block">
+                <img src="assets/icon-x.svg" alt="bla" class="logo-x">
+                <img src="assets/icon-o.svg" alt="blu" class="logo-o">
+             </div>
+             <div class="turn-block">
+                <img src="assets/icon-x.svg" alt="bla" class="first-line-turn-svg">
+                <p class="first-line-text">TURN</p>
+             </div>
+             <button type="submit" class="restart-button"> <img class="restartlogo" src="assets/icon-restart.svg" alt="photo"> </button>
+            </div>
+            
+            <div class="game-board">
+                <div class="box">
+                    <img class="box-pic" src="">
+                </div>
+                <div class="box">
+                    <img class="box-pic" src="">
+                </div>
+                <div class="box">
+                    <img class="box-pic" src="">
+                </div>
+                <div class="box">
+                    <img class="box-pic" src="">
+                </div>
+                <div class="box">
+                    <img class="box-pic" src="">
+                </div>
+                <div class="box">
+                    <img class="box-pic" src="">
+                </div>
+                <div class="box">
+                    <img class="box-pic" src="">
+                </div>
+                <div class="box">
+                    <img class="box-pic" src="">
+                </div>
+                <div class="box">
+                    <img class="box-pic" src="">
+                </div>
+            </div>
+    
+            <div class="last-line">
+                <div class="player-win"> 
+                    <p class="last-line-text" id="lastlinex"> X(YOU)</p>
+                    <p class="last-line-text large" id="xtablo"> 0 </p>
+                </div>
+                <div class="player-win">
+                    <p class="last-line-text">TIES</p>
+                    <p class="last-line-text large" id="draws">0 </p>
+                </div>
+                <div class="player-win"> 
+                    <p class="last-line-text" id="lastlineo">O(CPU)</p>
+                    <p class="last-line-text large" id="otablo"> 0</p>
+                </div>
+    
+            </div>
+
+            </div>
+
+            <div class="result-alert">
+                <div class="alert-card">
+                <p class="first-box-alert">YOU WON</p>
+                <div class="middle-box-alert">
+                    <img src="" class="middle-box-alert-svg">
+                    <h2 class="middle-box-alert-text">TAKES THE ROUND</h2>
+                </div>
+                <div class="last-box-alert">
+                    <button type="submit" class="quit-button"><span class="alert-button-text">QUIT</span></button>
+                    <button type="submit" class="next-round-button"><span class="alert-button-text">NEXT ROUND</span></button>
+                </div>
+                </div>
+            </div>
+
+            <div class="restart-alert">
+                <div class="restart-card">
+                    <h2 class="restart-card-text">RESTART GAME?</h2>
+                    <div class="restart-alert-buttons">
+                        <button type="submit" class="resume"><span class="alert-button-text">NO, CANCEL</span></button>
+                        <button type="submit" class="restart"><span class="alert-button-text">YES, RESTART</span></button>
+                    </div>
+                </div>
+            </div>
+    
+</body>
+<script src="script.js"></script>
+</html>

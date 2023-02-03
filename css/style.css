@@ -1,0 +1,452 @@
+body {
+    background-color:#1A2A33;
+    position:relative;
+}
+
+.main-card {
+    margin: 0 auto;
+    margin-top: 215px;
+    background-color: #1A2A33;
+    width: 32%;
+    height: 471px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.main-card-logo {
+    width: 71px;
+    height:32px;
+}
+.main-card-block {
+    margin-top:50px;
+    background-color: #1F3641;
+    width:100%;
+    display:flex;
+    height:205px;
+    flex-direction: column;
+    align-items:center;
+    border-radius:15px;
+}
+
+.mainc-card-block-block {
+    margin-top: 24px;
+    background-color:#1A2A33;
+    width: 90%;
+    height:72px;
+    border-radius:10px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+
+
+.header-1 {
+    margin-top: 24px;
+    font-family: 'Outfit', sans-serif;
+    font-weight:700;
+    font-size:16px;
+    color:white;
+}
+
+.header-2 {
+    margin-top: 17px;
+    font-family: 'Outfit', sans-serif;
+    font-weight:500;
+    font-size:14px;
+    color:#A8BFC9;
+}
+
+.x-block {
+    width:48%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:54px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.fa-xmark {
+    color:#A8A8A8;
+    font-size:42px;
+}
+
+.fa-o {
+    color: #A8A8A8;
+    font-size:42px;
+}
+
+.o-block {
+    width:48%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    border-radius:10px;
+    height:54px;
+    cursor:pointer;
+}
+
+.new-game-cpu-button {
+    margin-top:40px;
+    background-color: #F2B137;
+    width:100%;
+    height:67px;
+    border-radius:15px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    border:none;
+    font-size:20px;
+    border-radius:10px;
+    color:#1A2A33;
+    cursor:pointer;
+    transition: all ease 0.1s;
+}
+
+.new-game-plr-button {
+    margin-top:20px;
+    background-color:#31C3BD;
+    width:100%;
+    height:67px;
+    border-radius:15px;
+    border:none;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size:20px;
+    color:#1A2A33;
+    cursor:pointer;
+    transition: all ease-in 0.4s;
+}
+
+
+
+
+/* and active block, first line */
+
+.active-block {
+    margin: 0 auto;
+    width:32%;
+    display:flex;
+    flex-direction: column;
+    z-index:5;
+}
+
+.first-line {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.logo-o, .logo-x {
+    width:32px;
+    height:32px;
+}
+
+.logo-block {
+    display:flex;
+    justify-content: space-between;
+}
+
+.turn-block {
+    width:30%;
+    height:52px;
+    border-radius:10px;
+    background-color:#1F3641;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.first-line-text {
+    font-family: 'Outfit', sans-serif; 
+    font-weight:700;
+    font-size:16px;
+    color:#A8BFC9;
+}
+.first-line-turn-svg {
+    margin-right:13px;
+    width:20px;
+    height:20px;
+}
+.restart-button {
+    width:11%;
+    height:52px;
+    background-color:#A8BFC9;
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    transition: all ease-in 0.4s;
+}
+
+.restartlogo {
+    width:20px;
+    height:20px;
+}
+
+/* hello boxes */
+.game-board {
+    margin-top:20px;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+/* calke gamovyot box gastilva, imitom rom shignit kidev chasamatebelia ragaceebi */
+.box {
+    width:30%;
+    height:140px;
+    background-color:#1F3641;
+    border-radius:15px;
+    /* fill box with x, and o, and effects */
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    cursor:pointer;
+}
+
+.box-pic {
+  height:64px;
+}
+
+
+.box:nth-child(4), .box:nth-child(5), .box:nth-child(6), .box:nth-child(7),
+.box:nth-child(8),.box:nth-child(9) {
+    margin-top:21px;
+}
+
+/* last line  */
+
+.last-line {
+    margin-top:19px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.player-win {
+    width:30%;
+    height: 72px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    border-radius:15px;
+}
+
+.player-win:nth-child(1) {
+    background-color:#31C3BD;
+}
+
+.player-win:nth-child(2) {
+    background-color:#A8BFC9;
+}
+
+.player-win:nth-child(3) {
+    background-color:#F2B137;
+}
+
+.last-line-text {
+    margin-top:5px;
+    font-family: 'Outfit', sans-serif;
+    font-weight:500;
+    font-size:14px;
+}
+
+.large {
+    font-size:24px;
+    font-weight:700;
+}
+
+/* now write result alert window */
+
+.result-alert{
+    position:absolute;
+    margin: 0 auto;
+    top:220px;
+    width:100%;
+    height:266px;
+    background-color:#1F3641;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    display:none;
+    z-index:10;
+}
+
+.alert-card {
+    margin: 0 auto; 
+    width:34%;
+    height:176px; 
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.first-box-alert {
+    margin-top:45px;
+    font-family: 'Outfit', sans-serif;
+    font-weight:700;
+    font-size:16px;
+    color:#A8BFC9;
+}
+
+.middle-box-alert {
+   margin-top:23px;
+   display:flex;
+   justify-content: space-between;
+   align-items:center;
+}
+.middle-box-alert-svg {
+    width:64px;
+    height:64px;
+}
+.middle-box-alert-text {
+    font-family: 'Outfit', sans-serif;
+    font-weight:700;
+    font-size:40px;
+    line-height: 50.4px;
+    margin-left:24px;
+    color:black;
+}
+
+.last-box-alert {
+    margin-top: 46px;
+}
+
+.quit-button {
+    width:76px;
+    height:52px;
+    border:none;
+    background-color:#A8BFC9;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.next-round-button {
+    width:146px;
+    height:52px;
+    border:none;
+    background-color:#F2B137;
+    border-radius:10px;
+    cursor:pointer;
+    transition: all ease 0.1s;
+}
+
+.alert-button-text {
+    font-family: 'Outfit', sans-serif;
+    font-weight:700;
+    font-size:16px;
+    transition: all ease 0.1s;
+}
+/* start writing restart alert card also */
+.restart-alert {
+    position:absolute;
+    margin: 0 auto;
+    top:220px;
+    width:100%;
+    height:266px;
+    background-color:#1F3641;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    display:none;
+    z-index:10;
+}
+
+.restart-card {
+    margin:0 auto;
+    margin-top: 67px;
+    width:24%;
+    height:133px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.restart-alert-buttons {
+    margin-top:31px;
+    width:87%;
+    display:flex;
+    justify-content:space-between;
+}
+
+.restart-card-text {
+    font-family: 'Outfit', sans-serif;
+    font-weight:700;
+    font-size:40px;
+    color:#A8BFC9;
+}
+
+.resume {
+    width:139px;
+    height:52px;
+    border:none;
+    border-radius:10px;
+    background-color:#6B8997;
+    cursor:pointer;
+    transition: all ease 0.1s;
+}
+
+.restart {
+    width:151px;
+    height:52px;
+    border:none;
+    border-radius:10px;
+    background-color: #CC8B13;
+    cursor:pointer;
+    transition: all ease 0.1s;
+}
+
+/* hidden classes */
+.hidden {
+    background-color: white;
+}
+
+.dissapear {
+    display: none;
+}
+
+.appear {
+    display:block;
+}
+
+.blue {
+    color:#65E9E4
+}
+
+.markof {
+    color:#FFC860;
+}
+
+.abichni {
+    color:#A8BFC9;
+}
+
+/* hover effects */
+.new-game-cpu-button:hover {
+    background-color:#FFC860;
+}
+
+.new-game-plr-button:hover {
+    background-color:#65E9E4;
+}
+
+.quit-button:hover {
+    background-color: #DBE8ED;
+}
+
+.next-round-button:hover {
+    background-color:#FFC860;
+}
+
+.resume:hover {
+    background-color: #A8BFC9;
+}
+.restart:hover {
+    background-color:#F2B137;
+}
+
+.restart-button:hover {
+    background-color: #DBE8ED;
+}
